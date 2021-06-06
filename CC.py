@@ -489,7 +489,7 @@ class Ui_CurrencyConverter(object):
         QtCore.QMetaObject.connectSlotsByName(CurrencyConverter)
 
     def converter(self):
-        url ="http://data.fixer.io/api/latest?access_key=3a2d5407e143cad59ccfce44a94372ff"
+        url ="Enter Your API here"
         data = requests.get(url).json()
         rates= data['rates']
         initial_amount = int(self.amount.text())
